@@ -7,7 +7,7 @@ public static void wordsearch(String args) throws IOException {
 			String rst = "";
 			while((rst = fin.readLine()) != null) {
 				Matcher match = pattern.matcher(rst);
-				while(match.find()) {
+				while(match.find() && rst.lengt() == args.length()) {
 					int start = match.start(0);
 					int end = match.end(0);
 					fout.write((String) rst.substring(start, end) + "\n");
