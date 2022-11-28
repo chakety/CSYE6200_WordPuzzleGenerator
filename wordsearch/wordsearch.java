@@ -1,4 +1,15 @@
-public static void wordsearch(String args) throws IOException {
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Wordsearch {
+	public static void wordsearch(String args) throws IOException {
 		String s1 = args.replaceAll(" ", "[A-Z]");
 		System.out.println(s1);
 		FileWriter fout = new FileWriter("rst.txt");
@@ -21,3 +32,5 @@ public static void wordsearch(String args) throws IOException {
 			System.exit(0);
 		}
 	}
+
+}
