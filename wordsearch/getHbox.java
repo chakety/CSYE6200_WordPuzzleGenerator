@@ -1,4 +1,21 @@
-public HBox getHbox() {
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+
+public class GetHbox {
+	public static HBox getHbox() {
 		HBox hbox = new HBox(2);
 		hbox.setPadding(new Insets(5,10,5,10));
 		hbox.setSpacing(5);
@@ -16,7 +33,7 @@ public HBox getHbox() {
 				// TODO Auto-generated method stub
 
 				try {
-					wordsearch(txt.getText());
+					Wordsearch.wordsearch(txt.getText());
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -45,9 +62,11 @@ public HBox getHbox() {
 		btn.setOnAction(event);
 		txt.setOnAction(event);
 		hbox.setAlignment(Pos.TOP_LEFT);
-		hbox.getChildren().addAll(getVbox(txt, l1),btn);
+		hbox.getChildren().addAll(GetVbox.getVbox(txt, l1),btn);
 		
 		return hbox;
 		
 		
 	}
+
+}
