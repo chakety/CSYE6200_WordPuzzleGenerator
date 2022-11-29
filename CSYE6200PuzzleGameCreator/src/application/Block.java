@@ -1,5 +1,7 @@
 package application;
 
+import javafx.scene.control.TextField;
+
 public class Block {
 	//one block of the board 
 	public char c;
@@ -7,6 +9,7 @@ public class Block {
 	public boolean isSelected_;
 	public boolean isPartOfGame_;
 	public boolean inWrongWord_;
+	TextField tf=new TextField();
 	//isSelected_ = true if and only if it is selected by user 
 	//isPartOfBoard_ = true if and only if the block is a part of puzzle game
 	Block(){

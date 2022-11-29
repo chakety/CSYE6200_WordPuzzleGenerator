@@ -13,11 +13,6 @@ public class puzzleGame {
 		log = new ArrayList<puzzleBoard>();
 		log.add(new puzzleBoard());
 	}
-	puzzleBoard getCurrentBoard() {
-		//!!!!!!!!!!IMPORTANT pls use this to get current board,
-		//all the changes you make should only be on this board
-		return log.get(current_index);
-	}
 	ArrayList<String> find_all_words(){
 		//TODO: find all words in current board,only count when isPartOfGame = true
 		// output words in this format: "a???b?c" when '?' is empty space
