@@ -11,9 +11,10 @@ import javafx.scene.layout.BorderPane;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
+		Gameboard Gb = new Gameboard();
 		BorderPane pane = new BorderPane();
-		 pane.setCenter(Gameboard.getGameboard());
-		 pane.setRight(GetHbox.getHbox());
+		pane.setCenter(Gb.getGameboard());
+		pane.setRight(GetHbox.getHbox());
 		 
 		 
 		 Scene scene = new Scene(pane, 800, 800);
