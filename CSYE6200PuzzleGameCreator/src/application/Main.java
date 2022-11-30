@@ -1,5 +1,6 @@
 package application;
 import application.Gameboard.Gameboard;
+import application.tutorial.GetTutorialHBOX;
 import application.wordsearch.GetHbox;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -15,6 +16,7 @@ public class Main extends Application {
 		BorderPane pane = new BorderPane();
 		pane.setCenter(Gb.getGameboard());
 		pane.setRight(GetHbox.getHbox());
+		pane.setTop(GetTutorialHBOX.getTHbox());
 		 
 		 
 		 Scene scene = new Scene(pane, 800, 800);
