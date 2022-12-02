@@ -15,11 +15,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 
 public class Gameboard {
-	static Background red =Background.fill(Color.RED);
-	static Background green =Background.fill(Color.LIGHTGREEN);
-	static Background white =Background.fill(Color.WHITE);
-	static Background blue =Background.fill(Color.BLUE);
+	static public Background red =Background.fill(Color.RED);
+	static public Background green =Background.fill(Color.LIGHTGREEN);
+	static public Background white =Background.fill(Color.WHITE);
+	static public Background blue =Background.fill(Color.BLUE);
 	private GridPane Gpane;
+	
+	
 	
 	public Gameboard(){
 		Gpane = new GridPane();
@@ -27,7 +29,6 @@ public class Gameboard {
 			 for(int j = 0;j<20;j++) {
 				 //for each slot add a textfield with 25 width
 				  TextField tf=new TextField(); 
-				  
 				  tf.setMaxWidth(25);
 				  tf.setMinWidth(25);
 				  tf.setBorder(new Border(new BorderStroke(Color.LIGHTGREY, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(1))));
@@ -49,7 +50,7 @@ public class Gameboard {
 	}
 	
 	
-	Node getNodeFromGridPane(int col, int row) {
+	public Node getNodeFromGridPane(int col, int row) {
 	    for (Node node : Gpane.getChildren()) {
 	        if (GridPane.getColumnIndex(node) == col && GridPane.getRowIndex(node) == row) {
 	            return node;
@@ -60,7 +61,6 @@ public class Gameboard {
 	
 	void selectHandler( TextField tf,MouseEvent e) {
 		if(tf.getBackground().equals(white) && e.getClickCount() == 1) {
-			
 			tf.setBackground(green);
 			tf.setEditable(true);
 		}
