@@ -4,3 +4,9 @@
     -fx-font-family: "Courier New";
     
 }
+
+button{
+	width:100px;
+	height:50px;
+	
+}

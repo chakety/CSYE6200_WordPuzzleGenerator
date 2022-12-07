@@ -17,9 +17,10 @@ public class Main extends Application {
 		pane.setCenter(Gb.getGameboard());
 		pane.setRight(GetHbox.getHbox());
 		pane.setTop(GetTutorialHBOX.getTHbox());
+		wordcheck w = new wordcheck(Gb);
+		pane.setBottom(w.checkHBox());
 		 
-		 
-		 Scene scene = new Scene(pane, 800, 800);
+		 Scene scene = new Scene(pane, 900, 720);
 		 primaryStage.setTitle("Puzzle Game Generator");
 		 primaryStage.setScene(scene);
 		 primaryStage.show();

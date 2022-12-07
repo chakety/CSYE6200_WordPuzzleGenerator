@@ -59,7 +59,7 @@ public class wordcheck {
 					if(newword.length()>=2) {
 					System.out.println("newword="+newword+"newword");
 					for(int m=0;m<vindex.size();m++) {
-						System.out.print("Index: "+vindex.get(m)+" "+hindex.get(m));
+						//  System.out.print("Index: "+vindex.get(m)+" "+hindex.get(m));
 					}
 					try {
 						if(hasWord(newword)) {
@@ -78,8 +78,11 @@ public class wordcheck {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 						}
+					
+					}
 					newword="";
-					}	
+					hindex.clear();
+					vindex.clear();
 				}
 			}
 		}
@@ -107,7 +110,7 @@ public class wordcheck {
 				}
 				else {
 					if(newword1.length()>=2) {
-					System.out.println("newword="+newword1+"newword");
+						System.out.println("newword="+newword1+"newword");
 					for(int m=0;m<vindex.size();m++) {
 						System.out.print("Index: "+vindex.get(m)+" "+hindex.get(m));
 					}
@@ -128,8 +131,11 @@ public class wordcheck {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 						}
+					
+					}
 					newword1="";
-					}	
+					hindex.clear();
+					vindex.clear();
 				}
 			}
 		}

@@ -29,11 +29,14 @@ public class Gameboard {
 			 for(int j = 0;j<20;j++) {
 				 //for each slot add a textfield with 25 width
 				  TextField tf=new TextField(); 
-				  tf.setMaxWidth(25);
-				  tf.setMinWidth(25);
+				  tf.setMaxWidth(30);
+				  tf.setMinWidth(30);
+				  tf.setMaxHeight(30);
+				  tf.setMinHeight(30);
 				  tf.setBorder(new Border(new BorderStroke(Color.LIGHTGREY, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(1))));
 				  tf.setBackground(white);
 				  tf.setEditable(false);
+				  
 				  
 				  
 				  
@@ -64,7 +67,7 @@ public class Gameboard {
 			tf.setBackground(green);
 			tf.setEditable(true);
 		}
-		else if(tf.getBackground().equals(green) && e.getClickCount() >= 2) {
+		else if(!tf.getBackground().equals(white) && e.getClickCount() >= 2) {
 			tf.setBackground(white);
 			tf.setEditable(false);
 			tf.setText("");
