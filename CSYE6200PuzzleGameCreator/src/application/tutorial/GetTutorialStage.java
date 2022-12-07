@@ -1,4 +1,4 @@
-package application;
+package application.tutorial;
 
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;

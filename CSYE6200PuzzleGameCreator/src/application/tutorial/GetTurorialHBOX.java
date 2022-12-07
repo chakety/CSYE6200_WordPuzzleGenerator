@@ -1,4 +1,4 @@
-package application;
+package application.tutorial;
 
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -19,7 +19,7 @@ public class GetTurorialHBOX {
 		HBox tb = new HBox();
 		tb.setPadding(new Insets(5,10,5,10));
 		tb.setSpacing(5);
-		ImageView image = new ImageView(new Image("/image2/tutorial.png"));
+		ImageView image = new ImageView(new Image("/tutorialimage/tutorial.png"));
 		image.setPreserveRatio(true);
 		image.setFitHeight(100);
 		

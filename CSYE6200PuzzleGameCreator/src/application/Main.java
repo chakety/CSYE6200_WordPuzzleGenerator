@@ -1,6 +1,6 @@
 package application;
 import application.Gameboard.Gameboard;
-import application.tutorial.GetTutorialHBOX;
+import application.tutorial.GetTurorialHBOX;
 import application.wordsearch.GetHbox;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -16,11 +16,11 @@ public class Main extends Application {
 		BorderPane pane = new BorderPane();
 		pane.setCenter(Gb.getGameboard());
 		pane.setRight(GetHbox.getHbox());
-		pane.setTop(GetTutorialHBOX.getTHbox());
+		pane.setTop(GetTurorialHBOX.getTHbox());
 		wordcheck w = new wordcheck(Gb);
 		pane.setBottom(w.checkHBox());
 		 
-		 Scene scene = new Scene(pane, 900, 800);
+		 Scene scene = new Scene(pane, 900, 900);
 		 primaryStage.setTitle("Puzzle Game Generator");
 		 primaryStage.setScene(scene);
 		 primaryStage.show();
