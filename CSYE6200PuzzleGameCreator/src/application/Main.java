@@ -20,7 +20,7 @@ public class Main extends Application {
 		wordcheck w = new wordcheck(Gb);
 		pane.setBottom(w.checkHBox());
 		 
-		 Scene scene = new Scene(pane, 900, 720);
+		 Scene scene = new Scene(pane, 900, 800);
 		 primaryStage.setTitle("Puzzle Game Generator");
 		 primaryStage.setScene(scene);
 		 primaryStage.show();
