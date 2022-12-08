@@ -31,7 +31,7 @@ public class Main extends Application {
 		pane.setCenter(Gb.getGameboard());	
 		pane.setRight(vbox);
 		
-		Image img = new Image("/backgroundImage/MicrosoftTeams-image.png");
+		Image img = new Image("/backgroundImage/Backgroud(V2).jpg");
 		BackgroundImage bimg = new BackgroundImage(img,
 				BackgroundRepeat.NO_REPEAT,
 				BackgroundRepeat.NO_REPEAT,

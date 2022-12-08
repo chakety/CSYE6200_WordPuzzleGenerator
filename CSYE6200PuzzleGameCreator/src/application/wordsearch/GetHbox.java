@@ -62,7 +62,7 @@ public class GetHbox {
 						i++;
 						}
 					l1.setText(str.toString());
-					l1.setTextFill(Color.VIOLET);
+					l1.setTextFill(Color.DARKVIOLET);
 					} catch (FileNotFoundException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

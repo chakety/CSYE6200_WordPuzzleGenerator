@@ -197,9 +197,9 @@ public class wordcheck {
 		HBox hbox = new HBox();
 		hbox.setPadding(new Insets(50,50,10,10));
 		hbox.setSpacing(5);
-		ImageView checkimg = new ImageView(new Image("/checkimage/88e83b2001975de844f1c1b3aec9276.png"));
+		ImageView checkimg = new ImageView(new Image("/checkimage/IMG_0547.PNG"));
 		checkimg.setPreserveRatio(true);
-		checkimg.setFitHeight(250);
+		checkimg.setFitHeight(175);
 		Button check = new Button(" ");
 		check.setBackground(null);
 		check.setPrefSize(Region.USE_COMPUTED_SIZE,100);
