@@ -17,6 +17,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
+import javafx.scene.paint.Color;
 
 public class GetHbox {
 	public static HBox getHbox() {
@@ -32,7 +33,7 @@ public class GetHbox {
 		btn.setGraphic(img);
 		btn.setContentDisplay(ContentDisplay.CENTER);
 		
-		TextField txt = new TextField("Initial text");
+		TextField txt = new TextField("");
 		txt.setPrefSize(Region.USE_COMPUTED_SIZE, 50);
 		
 		Label l1 = new Label();
@@ -61,6 +62,7 @@ public class GetHbox {
 						i++;
 						}
 					l1.setText(str.toString());
+					l1.setTextFill(Color.VIOLET);
 					} catch (FileNotFoundException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
