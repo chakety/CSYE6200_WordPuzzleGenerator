@@ -10,7 +10,10 @@ import java.util.regex.Pattern;
 
 public class Wordsearch {
 	public static void wordsearch(String args) throws IOException {
-		String s1 = args.replaceAll(" ", "[A-Z]");
+		String ss = args.toUpperCase();
+		String s = ss.replaceAll("#", " ");
+		String s1 = s.replaceAll(" ", "[A-Z]");
+		
 		System.out.println(s1);
 		FileWriter fout = new FileWriter("rst.txt");
 		try(BufferedReader fin = new BufferedReader(new FileReader("dict.txt"))){

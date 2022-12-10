@@ -36,11 +36,6 @@ public class Gameboard {
 				  tf.setBorder(new Border(new BorderStroke(Color.LIGHTGREY, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(1))));
 				  tf.setBackground(white);
 				  tf.setEditable(false);
-				  
-				  
-				  
-				  
-				
 				  tf.setOnMouseClicked(e -> selectHandler(tf,e));
 				  tf.setOnAction(e->limitInput(tf));
 				  
@@ -63,6 +58,11 @@ public class Gameboard {
 	}
 	
 	void selectHandler( TextField tf,MouseEvent e) {
+		for(int i=0;i<20;i++) {
+			for(int j=0;j<20;j++) {
+				this.limitInput((TextField)this.getNodeFromGridPane(i,j));
+			}
+		}
 		if(tf.getBackground().equals(white) && e.getClickCount() == 1) {
 			tf.setBackground(green);
 			tf.setEditable(true);
@@ -73,7 +73,7 @@ public class Gameboard {
 			tf.setText("");
 		}
 	}
-	void limitInput(TextField tf) {
+	public void limitInput(TextField tf) {
 		System.out.print("before"+tf.getText());
 		if(tf.getText().matches("[a-z]||[A-Z]")) {
 			tf.setText(tf.getText().toUpperCase());

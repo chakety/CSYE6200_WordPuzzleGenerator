@@ -33,6 +33,7 @@ public class wordcheck {
 		for(int i=0;i<20;i++) {
 			for(int j=0;j<20;j++) {
 				TextField tf = (TextField) Gb.getNodeFromGridPane(j, i);
+				Gb.limitInput(tf);  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 				if(!tf.getBackground().equals(Gameboard.white)) {
 					tf.setBackground(Gb.green);
 				}
