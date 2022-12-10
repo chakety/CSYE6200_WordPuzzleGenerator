@@ -2,10 +2,10 @@
 ## Code Credit to Ruizhe Zeng, Siyan Li, Wenyi Cai, Yifan Yue
 ###### The is a puzzle game generator, not a game yet!
 
-## Environment Set up (Optional if all set)
-1. Import the project into Eclipse by using File > import > projects from folder or archive
+## Environment Set up (Optional if haven't done before)
+1. Import the project into Eclipse by using File > import > projects from folder or archive.
 2. If there is a error existes in the project:
-  - right click the project name, select properties, click Java Build Path, select libraries, add Javafx into modulepath
+  - right click the project name, select properties, click Java Build Path, select libraries, add Javafx into modulepath.
   - delete javafx module info if exists.
   
 ## Run the program
